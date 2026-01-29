@@ -1,0 +1,120 @@
+## Task Management Backend 
+
+
+- Test 1
+Trying to view tasks when nothing is added yet
+
+Input:
+2
+
+Expected:
+Task list seems to be empty.
+
+
+
+- Test 2
+Adding first task
+
+Input:
+1
+101
+Learn Backend
+high
+pending
+
+Expected:
+task added.
+
+
+
+- Test 3
+Checking if task is visible after adding
+
+Input:
+2
+
+Expected:
+id: 101 ,title: Learn Backend ,priority: high ,status: pending
+
+
+
+- Test 4
+Updating existing task using id
+
+Input:
+4
+101
+Learn C++ Backend
+medium
+done
+
+Expected:
+Task updated
+
+
+
+- Test 5
+Checking updated task
+
+Input:
+2
+
+Expected:
+id: 101 ,title: Learn C++ Backend ,priority: medium ,status: done
+
+
+
+- Test 6
+Deleting task
+
+Input:
+3
+101
+
+Expected:
+task is removed successfully
+
+
+
+- Test 7
+Trying to delete task which does not exist
+
+Input:
+3
+999
+
+Expected:
+this task is not there with this task id.
+
+
+
+- Test 8
+Viewing tasks after deletion
+
+Input:
+2
+
+Expected:
+task list seems to be empty.
+
+
+
+- Test 9
+Invalid menu input
+
+Input:
+9
+
+Expected:
+wrong choice selected
+
+
+
+- Test 10
+Exit program
+
+Input:
+5
+
+Expected:
+Exiting the program
