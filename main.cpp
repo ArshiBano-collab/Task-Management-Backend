@@ -43,7 +43,7 @@ void addTask(vector<Task>& tasks) {
 
 void showAllTasks(const vector<Task>& tasks) {
     if (tasks.empty()) {
-        cout << " task  list seems to empty.\n";
+        cout << " task  list seems to be empty.\n";
         return;
     }
 
@@ -54,23 +54,23 @@ void showAllTasks(const vector<Task>& tasks) {
 
 void deleteTask(vector<Task>& tasks) {
     if (tasks.empty()) {
-        cout << " the list is empty so nothing to delte \n";
+        cout << " the list is empty so nothing to delte.\n";
         return;
     }
 
     int id;
-    cout << " enter task id to deleteTask ";
+    cout << " enter task id to deleteTask.\n ";
     cin >> id;
 
     for (auto it = tasks.begin(); it != tasks.end(); ++it) {
         if (it->id == id) {
             tasks.erase(it);
-            cout << " task is removed succesfully\n";
+            cout << " task is removed successfully.\n";
             return;
         }
     }
 
-    cout << " this task is not their with this task id.\n";
+    cout << " this task is not there with this task id.\n";
 }
 
 void updateTask(vector<Task>& tasks) {
@@ -80,7 +80,7 @@ void updateTask(vector<Task>& tasks) {
     }
 
     int id;
-    cout << "Enter your task id to update ";
+    cout << "Enter your task id to update.\n";
     cin >> id;
     cin.ignore();
 
@@ -95,7 +95,7 @@ void updateTask(vector<Task>& tasks) {
             cout << "new status: ";
             getline(cin, t.status);
 
-            cout << "Task updated \n";
+            cout << "Task updated.\n";
             return;
         }
     }
@@ -108,12 +108,12 @@ int main() {
     int choice;
 
     while (true) {
-        cout << " Task Menu \n";
-        cout << "Enter 1 for  Adding a  task\n";
-        cout << "Enter 2 for  viewing a  task\n";
-        cout << "Enter 3 for  delete a  task\n";
-        cout << "Enter 4 for  update a  task\n\n";
-        cout << "Enter 5 for exit\n";
+        cout << " Task Menu.\n";
+        cout << "Enter 1 for  Adding a  task.\n";
+        cout << "Enter 2 for  viewing a  task.\n";
+        cout << "Enter 3 for  delete a  task.\n";
+        cout << "Enter 4 for  update a  task.\n";
+        cout << "Enter 5 for exit.\n";
         cout << "Enter choice: ";
 
         cin >> choice;
@@ -131,11 +131,11 @@ int main() {
             updateTask(tasks);
         }
         else if (choice == 5) {
-            cout << " Exiting the program .\n";
+            cout << " Exiting the program.\n";
             break;
         }
         else {
-            cout << " wrong chocie selected \n";
+            cout << " wrong choice selected.\n";
         }
     }
 
